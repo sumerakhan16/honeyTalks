@@ -32,20 +32,20 @@ router.post('/api/media', (req, res) => {
 })
 
 
-router.get("/search/movie", (req, res) => { 
+router.get("/search/movie/:movie", (req, res) => { 
 
 
 axios({
     "method":"GET",
-    "url":"https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/",
+    "url":"https://imdb-internet-movie-database-unofficial.p.rapidapi.com/film/" + req.params.movie,
     "headers":{
-    "content-type":"application/octet-stream",
-    "x-rapidapi-host":"imdb-internet-movie-database-unofficial.p.rapidapi.com",
-    "x-rapidapi-key":"17bd1bd9b5msh60e871aa6d94c0dp13ef8djsn2cfcd543f5e3"
+      "content-type":"application/octet-stream",
+      "x-rapidapi-host":"imdb-internet-movie-database-unofficial.p.rapidapi.com",
+      "x-rapidapi-key":"17bd1bd9b5msh60e871aa6d94c0dp13ef8djsn2cfcd543f5e3"
     }
-    })
-    .then((response)=> res.json(response.data))
-    .catch((error)=> res.json(error))
+  })
+  .then((response)=> res.json(response.data))
+  .catch((error)=> res.json(error))
 })
 
 module.exports = router;

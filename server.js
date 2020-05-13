@@ -11,6 +11,7 @@ app.use(require('./controllers/commentsController.js'));
 
 app.use(require('./controllers/mediaController.js'));
 app.use(require('./controllers/usersController.js'));
+app.use(require("./controllers/htmlController.js"));
 
 
 

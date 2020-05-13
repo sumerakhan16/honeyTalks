@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+  <html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="../assets/js/script.js"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>honeyTalks</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap" rel="stylesheet">
+   <link href="/assets/css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+
+      <div class="s01">
+        <img class="img" src ="../assets/images/honeyTalks.png"/>
+        <form>
+          <fieldset>
+            <legend class="searchWords"> Search for a K-Drama or Film!</legend>
+          </fieldset>
+          <div class="inner-form">
+            <div class="input-field first-wrap">
+              <input id="search" type="text" placeholder="What do you want to watch?" />
+            </div>
+            <div class="input-field third-wrap">
+              <button class="btn-search" type="button" id='searchClick' >Search</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="container-fluid">
+        <div class="col-sm-12">
+          <br />
+            <div class="card">
+             <div class="card-header">
+               <i class="far fa-newspaper"></i><strong>  SHOW/MOVIE </strong>
+                 </div>
+                   <div class="mediaInfo">
+                    <ul>
+                     <h2> Title: </h2> <p id="mediaTitle"></p>
+                      
+                    <h3> Synopsis: </h3> <p id="mediaSynopsis"></p>
+                  
+                    <h3> Rating: </h3> <p id="mediaRating"></p>
+                
+                    <h3> Cover Photo: </h3>  <img id="mediaCoverPhoto"></img>
+                    <h3> Comments:    </h3>
+                    <div id= "commentSection"></div>
+                   </ul>
+                 </div>
+             </div>
+          </div>
+        </div>
+    <!--Comments Section-->
+    <br>
+    <br>
+    <br>
+    <div class = 'form'>
+      <h5> Add a Comment!</h5>
+      Name: <input type ="text" id= "name" /> <br /> <br />
+      Date: <input type = "date" id = "date" /> <br /> <br />
+      Body: <textarea rows="5" col="30" id= "bodyText"></textarea> <br /> <br />
+      <input type="button" id="addComment" value= "Add Comment" />
+    </div>
+          
+    </body>
+  </html>
     
-</body>
-</html>
+    
+    
+   
+   
+
+
+    
+    
+
+
+   
+      
+
+          

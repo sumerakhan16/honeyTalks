@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>honeyTalks</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+  </head>
+  <body>
+        <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.kindpng.com/picc/m/242-2426948_transparent-cute-bee-png-openclipart-org-png-download.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        honeyTalks
+      </a>
+    </nav>
+    <!-- JUMBOTRON -->
+    <div class="jumbotron bg">
+      <div class="container"> 
+        
+      </div>
+
+        <!--The following container is for the Jumbotron with the search bar at the top of the page-->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Search for a K-Drama or Film</label>
+                  <input type="text" class="form-control" id="user-input-song" placeholder="Ex: Train to Busan">
+              </div>
+                <button type="button" class="btn btn-outline-secondary" id='searchClick'>
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  <!--This next container is where I will be adding th articles -->
+  <div class="container-fluid">
+    <div class="col-sm-12">
+      <br />
+        <div class="card">
+         <div class="card-header">
+           <i class="far fa-newspaper"></i><strong>  SHOW/MOVIE </strong>
+             </div>
+               <div class="mediaInfo">
+                <ul>
+                 <h2> Title: </h2> <p id="mediaTitle"></p>
+                  
+                <h3> Synopsis: </h3> <p id="mediaSynopsis"></p>
+              
+                <h3> Rating: </h3> <p id="mediaRating"></p>
+            
+                <h3> Cover Photo: </h3>  <p id="mediaCoverPhoto"></p>
+               </ul>
+             </div>
+         </div>
+      </div>
+   </div>
+<!--Comments Section-->
+
+<div class="info">
+  <label for="example">Enter Text
+  </label>
+  <input id="example" type="text"
+         name="Ntext" size="20">
+  <input id="sent" type="submit"  
+         value="Send"> 
+</div>
+<p id="para">      
+</p>
+</body>
+<script>
+window.onclick = function(e)
+{   var id =  e.target.id;   
+ if (id === 'sent')  
+ { var txt = document.getElementById('example').value    
+   $( "#para" ).empty().append( txt );
+ }
+}
+</script>
+
+    <!-- The following container is the footer at the end of the page-->
+  <footer class="row">
+    <div class="col-sm-12">
+      <hr>
+      <h5 class="text-center">
+        <small>
+          Created by the honeyTalks team
+        </small>
+      </h5>
+    </div>
+  </footer>
+
+    <script src="https://kit.fontawesome.com/f9e7f8550a.js" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src='/assets/js/script.js'></script>
+  </body>
+  </html>
+    
+
+
+  
+
+  
